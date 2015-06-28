@@ -1,0 +1,13 @@
+{% extends 'base.jinja2' %}
+
+{% block title %}Pykin - Find your Python brethren{% endblock %}
+
+{% block description %}{% endblock %}
+
+{% block content %}
+
+<h1>Find your Python brethren</h1>
+
+<a href="{{ request.route_url('social.auth', backend='twitter') }}" class="btn btn-default">Embark</a>
+
+{% endblock content %}

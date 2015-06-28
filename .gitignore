@@ -1,0 +1,6 @@
+__pycache__/
+
+/node_modules/
+/pykin/static/
+/*.egg-info
+/pykin.sqlite

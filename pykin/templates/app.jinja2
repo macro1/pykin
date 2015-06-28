@@ -1,0 +1,21 @@
+{% extends 'base.jinja2' %}
+
+{% block root_attrs %}{{ super() }} ng-app="pykin"{% endblock %}
+
+{% block title %}Pykin{% endblock %}
+
+{% block description %}{% endblock %}
+
+{% block js %}
+  <script src="{{ request.static_url('pykin:static/pykin.js') }}"></script>
+{% endblock js %}
+
+{% block content %}
+{% raw %}
+
+<div ng-controller="AuthController">
+  <h1 ng-bind="'Hello ' + user.username"></h1>
+</div>
+
+{% endraw %}
+{% endblock content %}
